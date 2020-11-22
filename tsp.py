@@ -54,6 +54,11 @@ class Route:
     def __setitem__(self, index, value):
         self.route[index] = value
     
+    def __repr__(self):
+        for index,city in enumerate(self.route):
+            print(city)
+            
+    
 
 # Create initial population - collection of routes by given population size
 def get_initial_population(population_size, cities:list) -> list:
